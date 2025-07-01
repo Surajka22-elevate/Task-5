@@ -1,3 +1,13 @@
+ARP:-
+![ARP 1](https://github.com/user-attachments/assets/894f167d-3a03-4b2a-acbb-9618511f1f40)
+
+ICMP:-
+![ICMP 1](https://github.com/user-attachments/assets/671dccfb-b01f-4eb6-8047-a95ed3f8bf79)
+
+DNS:-
+![DNS 1](https://github.com/user-attachments/assets/e02d90f1-b998-4fba-880a-bbe475246fe9)
+
+ 
  Task 5: Network Traffic Analysis using Wireshark
 
  Objective
