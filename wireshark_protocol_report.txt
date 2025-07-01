@@ -1,0 +1,43 @@
+
+ Wireshark Network Traffic Analysis Report
+
+ Objective
+To capture and analyze network traffic using Wireshark and identify key protocols and packet structures.
+
+ Captured Protocols
+This report contains the analysis of three primary network protocols identified in the capture:
+
+ 1. ARP (Address Resolution Protocol)
+- Function: Resolves IP addresses to MAC addresses in a local network.
+- Example Packet:
+  - `Who has 10.0.2.2? Tell 10.0.2.15`
+  - Response: `10.0.2.2 is at 52:55:0a:00:02:02`
+- Usage: Essential for communication within a LAN. No transport layer protocol involved (Layer 2).
+
+ 2. DNS (Domain Name System)
+- Function: Resolves human-readable domain names (e.g., google.com) into IP addresses.
+- Example Query:
+  - Request: `Standard query A google.com`
+  - Response: `A google.com A 142.250.192.142`
+- Port Used: UDP port 53
+- Usage: Foundational for most web services and name resolutions.
+
+ 3. ICMP (Internet Control Message Protocol)
+- Function: Used for diagnostic tools like ping.
+- Example Packets:
+  - Echo (ping) request and reply.
+  - Source: `10.0.2.15`, Destination: `142.250.192.142`
+  - TTL values: 64 (Linux default) and 255 (response TTL)
+- Usage: Identifies network latency, reachability, and packet loss.
+
+ Observations
+- ARP packets show local host resolution activities.
+- DNS queries are made to resolve domain names like google.com.
+- ICMP ping responses confirm that the host is reachable on the internet.
+
+ Conclusion
+Wireshark effectively captures and displays live packet details. From these captures, you can interpret traffic patterns, identify protocols, and troubleshoot network issues.
+
+---
+Captured Using Interface: `eth0`  
+Tools Used: Wireshark
